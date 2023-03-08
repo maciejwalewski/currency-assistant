@@ -1,15 +1,20 @@
 import { useSelectedCurrencies } from "@/state/useSelectedCurrencies";
+import { useState } from "react";
 
 export const useLocationCurrency = async () => {
   const { setLocationCurrency, locationCurrency } = useSelectedCurrencies();
-  if (locationCurrency) return;
+  const [isLoading, setLoading] = useState(false);
+  if (locationCurrency || isLoading) return;
 
   try {
-    const data = await fetch("http://ip-api.com/json/?fields=currency");
+    setLoading(true);
+    const data = await fetch("https://ipapi.co/json/");
     const { currency } = await data.json();
 
     setLocationCurrency(currency);
+    setLoading(false);
   } catch (error) {
-    throw "Sorry, I can't locate you right now :(";
+    setLoading(false);
+    throw Error("Sorry, I can't locate you right now :(");
   }
 };

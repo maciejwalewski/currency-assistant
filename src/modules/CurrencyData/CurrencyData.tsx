@@ -28,8 +28,8 @@ const Skeletons = () => (
       gap: 2,
     }}
   >
-    <Skeleton variant="circular" width={86} height={86} />
-    <Skeleton variant="rounded" width="100%" height={250} />
+    <Skeleton animation="wave" variant="circular" width={86} height={86} />
+    <Skeleton animation="wave" variant="rounded" width="100%" height={250} />
   </Box>
 );
 
