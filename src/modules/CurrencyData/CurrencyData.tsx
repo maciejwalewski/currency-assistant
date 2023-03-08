@@ -84,12 +84,12 @@ export const CurrencyData = () => {
           {profitability === Profitability.success ? (
             <SentimentSatisfiedAltIcon
               color={profitability}
-              sx={{ fontSize: 70 }}
+              sx={{ fontSize: 50 }}
             />
           ) : (
             <SentimentVeryDissatisfiedIcon
               color={profitability}
-              sx={{ fontSize: 70 }}
+              sx={{ fontSize: 50 }}
             />
           )}
         </IconButton>

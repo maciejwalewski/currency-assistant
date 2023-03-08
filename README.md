@@ -1,6 +1,6 @@
 ### Next.js app with Currency integration
 
-## DEPLOYED HERE
+## [DEPLOYED HERE](https://currency-assistant.vercel.app/)
 
 ##### **Features**:
 

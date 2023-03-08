@@ -14,6 +14,8 @@ body {
 
 main {
   height: 100vh;
+  height: -webkit-fill-available;
+  height: -moz-available;
   display: flex;
   flex-direction: column;
   align-items: center;

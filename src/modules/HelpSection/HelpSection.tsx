@@ -33,7 +33,7 @@ export const HelpSection = () => {
         color="warning"
         onClick={handleOpen}
       >
-        <HelpOutlineIcon fontSize="large" />
+        <HelpOutlineIcon fontSize="medium" />
       </IconButton>
       <Dialog
         PaperProps={{ sx: { m: 2 } }}
