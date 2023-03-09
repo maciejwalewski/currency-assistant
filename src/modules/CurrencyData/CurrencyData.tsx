@@ -54,8 +54,8 @@ export const CurrencyData = () => {
 
   const rows = [
     createData("Yesterday", yesterdaysRate),
-    createData("Last week", lastWeekAvgRate),
-    createData("Last 3 months", last3MonthsAvgRate),
+    createData("Last week (avg)", lastWeekAvgRate),
+    createData("Last 3 months (avg)", last3MonthsAvgRate),
   ];
 
   const tooltipTitle =
@@ -99,7 +99,7 @@ export const CurrencyData = () => {
           <TableHead sx={{ backgroundColor: "#e0e0e0" }}>
             <TableRow>
               <TableCell>Date range</TableCell>
-              <TableCell align="right">Avg Rate</TableCell>
+              <TableCell align="right">Rate</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
