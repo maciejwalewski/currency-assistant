@@ -25,7 +25,7 @@ const Home = () => {
       <Typography color="text.secondary" variant="body1">
         Decide.
       </Typography>
-      <Button size="large" variant="contained" color="success" sx={{ mt: 5 }}>
+      <Button size="large" variant="contained" sx={{ mt: 5 }}>
         <Link
           style={{ textDecoration: "none", color: "white", fontSize: 18 }}
           href={ROUTES.HISTORICAL}

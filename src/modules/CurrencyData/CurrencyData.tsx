@@ -1,6 +1,5 @@
 import {
   TableContainer,
-  Paper,
   Table,
   TableHead,
   TableRow,
@@ -12,8 +11,8 @@ import {
   Typography,
   Skeleton,
 } from "@mui/material";
-import SentimentSatisfiedAltIcon from "@mui/icons-material/SentimentSatisfiedAlt";
-import SentimentVeryDissatisfiedIcon from "@mui/icons-material/SentimentVeryDissatisfied";
+import ThumbUpIcon from "@mui/icons-material/ThumbUp";
+import ThumbDownIcon from "@mui/icons-material/ThumbDown";
 import { useHistoricalData } from "@/api/useHistoricalData/useHistoricalData";
 import { useSelectedCurrencies } from "@/state/useSelectedCurrencies";
 import { Profitability } from "@/api/useHistoricalData/types";
@@ -82,21 +81,15 @@ export const CurrencyData = () => {
       >
         <IconButton aria-label="profitability">
           {profitability === Profitability.success ? (
-            <SentimentSatisfiedAltIcon
-              color={profitability}
-              sx={{ fontSize: 50 }}
-            />
+            <ThumbUpIcon color={profitability} sx={{ fontSize: 50 }} />
           ) : (
-            <SentimentVeryDissatisfiedIcon
-              color={profitability}
-              sx={{ fontSize: 50 }}
-            />
+            <ThumbDownIcon color={profitability} sx={{ fontSize: 50 }} />
           )}
         </IconButton>
       </Tooltip>
-      <TableContainer sx={{ maxWidth: 400, mt: 2 }} component={Paper}>
+      <TableContainer sx={{ maxWidth: 400, mt: 2 }}>
         <Table aria-label="simple table">
-          <TableHead sx={{ backgroundColor: "#e0e0e0" }}>
+          <TableHead sx={{ backgroundColor: "var(--secondary-color)" }}>
             <TableRow>
               <TableCell>Date range</TableCell>
               <TableCell align="right">Rate</TableCell>

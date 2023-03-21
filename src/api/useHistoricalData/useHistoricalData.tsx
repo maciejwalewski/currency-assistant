@@ -1,5 +1,5 @@
 import { Currencies } from "@/state/useSelectedCurrencies";
-import { useQuery } from "react-query";
+import { useQuery } from "@tanstack/react-query";
 import { format, subDays } from "date-fns";
 import {
   TransformedHistoricalData,
@@ -85,6 +85,7 @@ export const useHistoricalData = (
     {
       staleTime: Infinity,
       cacheTime: Infinity,
+      retry: false,
     }
   );
 

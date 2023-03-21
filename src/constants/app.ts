@@ -3,7 +3,7 @@ export const ROUTES = {
 };
 
 export const API_ERROR =
-  "Seems like API failed. Please let me know about this.";
+  "Seems like an external API has failed. Please let me know about this.";
 
 export const API_ENDPOINTS = {
   HISTORICAL: "historical",

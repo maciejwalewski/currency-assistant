@@ -14,8 +14,8 @@ const helpDialogId = "help-dialog";
 
 const MESSAGES = [
   "This simple application lets you compare 2 different currencies.",
-  "Hover on smile icon to know more about current conversion profitability.",
-  "Click on location icon to set currency by your IP address.",
+  "Hover on thumb icon to know more about current conversion profitability.",
+  "Click on location button to set currency by your IP address.",
   "Table at the bottom shows current rate, last 3 weeks average rate and last 3 months average rate.",
   "Your last selections will be restored on every page enter until you close your browser.",
 ];
@@ -30,7 +30,7 @@ export const HelpSection = () => {
     <>
       <IconButton
         sx={{ alignSelf: "end" }}
-        color="warning"
+        color="primary"
         onClick={handleOpen}
       >
         <HelpOutlineIcon fontSize="medium" />

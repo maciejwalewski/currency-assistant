@@ -1,4 +1,4 @@
-import { IconButton } from "@mui/material";
+import { Button } from "@mui/material";
 
 import MyLocationIcon from "@mui/icons-material/MyLocation";
 
@@ -9,12 +9,14 @@ interface Props {
 
 export const LocationButton = ({ onClick, isDisabled }: Props) => {
   return (
-    <IconButton
-      sx={{ maxHeight: 40, maxWidth: 40 }}
+    <Button
+      sx={{ fontSize: 11, minWidth: "90%" }}
       disabled={isDisabled}
       onClick={onClick}
+      variant="outlined"
+      endIcon={<MyLocationIcon />}
     >
-      <MyLocationIcon />
-    </IconButton>
+      By Location
+    </Button>
   );
 };

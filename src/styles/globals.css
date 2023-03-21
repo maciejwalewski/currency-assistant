@@ -8,8 +8,13 @@
 
 html,
 body {
+  --main-color: #1976d280;;
+  --secondary-color: #91c8ff80;;
+  --white-color: #fff;
   max-width: 100vw;
+  height: 100vh;
   overflow-x: hidden;
+  background: linear-gradient(0deg, var(--main-color) 0%, var(--white-color) 25%, var(--white-color) 100%);
 }
 
 main {
